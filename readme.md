@@ -9,6 +9,10 @@
 
 в папке laradock
 ````
-    docker-compose start nginx mysql workspace 
+    docker-compose start nginx mysql workspace php-fpm
     docker-compose stop
+````
+приконнектиться
+````
+docker-compose exec workspace bash
 ````
