@@ -3,7 +3,7 @@
     php artisasn key:generate &&
     cd laradock &&
     cp env-example .env &&
-    docker-compose up -d nginx mysql workspace 
+    docker-compose up -d nginx mysql workspace php-fpm
 ````
     http://localhost
 
