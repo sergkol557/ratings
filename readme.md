@@ -2,8 +2,9 @@
     sudo -- sh -c -e "echo '127.0.0.1   ratings.test' >> /etc/hosts" && 
     cp .env.example .env && 
     sed -i "s/^APP_URL=.*/APP_URL=http:\/\/ratings.test/" .env && 
-    sed -i "s/^DB_HOST=.*/DB_HOST=mysql/" .env && \
-    sed -i "s/^DB_DATABASE=.*/DB_DATABASE=homestead/" .env && \
+    sed -i "s/^DB_HOST=.*/DB_HOST=mariadb/" .env && \
+    sed -i "s/^DB_DATABASE=.*/DB_DATABASE=default/" .env && \
+    sed -i "s/^DB_USERNAME=.*/DB_USERNAME=default/" .env && \
     sed -i "s/^DB_PASSWORD=.*/DB_PASSWORD=secret/" .env && \
     sed -i "s/^REDIS_HOST=.*/REDIS_HOST=redis/" .env && \
     echo "QUEUE_HOST=beanstalkd" >> .env && \
@@ -13,9 +14,10 @@
     php artisasn key:generate &&
     cd laradock &&
     cp env-example .env &&
-    docker-compose up -d nginx mysql workspace php-fpm && \
+    docker-compose up -d nginx mariadb workspace php-fpm && \
     docker-compose exec workspace bash && \
     composer install && \
+    php artisan migrate && \
     npm i && \
     npm run development && \
     exit && \
@@ -25,7 +27,7 @@
 
 в папке laradock
 ````
-    docker-compose start nginx mysql workspace php-fpm
+    docker-compose start nginx maridb workspace php-fpm
     docker-compose stop
 ````
 приконнектиться
