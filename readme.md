@@ -28,8 +28,8 @@
 
 в папке laradock
 ````
-    docker-compose start nginx maridb workspace php-fpm
-    docker-compose stop
+    docker-compose up -d nginx mariadb workspace php-fpm
+    docker-compose down
 ````
 приконнектиться
 ````
