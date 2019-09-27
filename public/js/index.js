@@ -29287,6 +29287,17 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./resources/sass/admin.scss":
+/*!***********************************!*\
+  !*** ./resources/sass/admin.scss ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -29378,14 +29389,15 @@ if (document.querySelector('#example')) {
 /***/ }),
 
 /***/ 0:
-/*!****************************************************************!*\
-  !*** multi ./resources/ts/index.tsx ./resources/sass/app.scss ***!
-  \****************************************************************/
+/*!********************************************************************************************!*\
+  !*** multi ./resources/ts/index.tsx ./resources/sass/app.scss ./resources/sass/admin.scss ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /var/www/resources/ts/index.tsx */"./resources/ts/index.tsx");
-module.exports = __webpack_require__(/*! /var/www/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /var/www/resources/sass/app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! /var/www/resources/sass/admin.scss */"./resources/sass/admin.scss");
 
 
 /***/ })

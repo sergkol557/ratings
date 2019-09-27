@@ -1,4 +1,5 @@
 {
-    "/ts/index.js": "/ts/index.js?id=3ad44445c91ed0cdae36",
-    "/css/app.css": "/css/app.css?id=55972315e7b86f585b78"
+    "/js/index.js": "/js/index.js",
+    "/css/app.css": "/css/app.css",
+    "/css/admin.css": "/css/admin.css"
 }
