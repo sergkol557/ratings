@@ -1,0 +1,98 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: calc(100% - 12px);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: rgba(0,0,0,.3);
+  box-shadow: 6px 0px 7px 6px rgba(0,0,0,.2);
+  .header__item {
+    position: relative;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all .15s linear;
+    .fas, .fab {
+      color: #ffffff;
+    }
+    &:hover {
+      background-color: rgba(0,0,0,.4);
+      .item__sub-menu {
+        display: flex;
+      }
+    }
+
+    .item__sub-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      //left: -100%;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      min-width: max-content;
+      color: #ffffff;
+      background-color: rgba(100, 100, 100, 0.5);
+      padding-top: 10px;
+      .sub-menu__item {
+        min-width: fit-content;
+        padding: 10px 20px;
+        color: inherit;
+      }
+    }
+  }
+  .search {
+    border-color: rgba(0, 0, 0, 0.1);
+    .search__logo {
+      display: flex;
+      width: 289px;
+      align-items: center;
+      justify-content: center;
+      border-color: rgba(0, 0, 0, 0.1);
+      transition: all .15s linear;
+      .input-search {
+        height: 40px;
+        border-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        padding-left: 20px;
+        color: #ffffff;
+        &:focus {
+          outline: none;
+          //background-color: rgba(0, 0, 0, 0.1);
+          //border-radius: 20px;
+        }
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          color: #ffffff;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+          color: #ffffff;
+        }
+        &:-ms-input-placeholder { /* IE 10+ */
+          color: #ffffff;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+          color: #ffffff;
+        }
+      }
+      .fas {
+        width: 60px;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &:hover {
+        border-radius: 20px;
+        background-color: rgba(0,0,0,.1);
+      }
+    }
+  }
+}

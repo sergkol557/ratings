@@ -1,0 +1,10 @@
+.side-bar {
+  width: 300px;
+  height: 100vh;
+  position: sticky;
+  background-color: rgb(0,255,0);
+  //background-color: #9c27b0;
+  filter: grayscale(80%);
+  overflow-y: auto;
+  box-shadow: 3px 0px 7px 6px rgba(#9c27b0,.5);
+}

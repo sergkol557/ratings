@@ -1,1 +1,21 @@
+@import 'reset';
 @import 'variables';
+@import 'admin-header';
+@import 'admin-sidebar';
+@import '~@fortawesome/fontawesome-free/css/fontawesome.min.css';
+//@import '~@fortawesome/fontawesome-free/css/regular.min.css';
+@import '~@fortawesome/fontawesome-free/css/brands.min.css';
+@import '~@fortawesome/fontawesome-free/css/solid.min.css';
+//
+
+
+.main-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.right-column {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}

@@ -2,6 +2,7 @@ import * as React from 'react';
 
 interface Props {
     count?: number;
+    text?: string;
 }
 
 interface State {
